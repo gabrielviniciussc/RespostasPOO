@@ -1,0 +1,28 @@
+package br.edu.principal;
+
+import java.util.Scanner;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        double hora, m;
+        int h;
+        double conversao;
+
+        // Criação do objeto Scanner para leitura de dados
+        Scanner sc = new Scanner(System.in);
+
+        // Leitura da hora
+        System.out.print("Digite a hora (formato H.m): ");
+        hora = sc.nextDouble();
+
+        // Cálculos
+        h = (int) hora; // parte inteira da hora
+        m = hora - h; // parte decimal da hora
+        conversao = (h * 60) + (m * 100); // conversão para minutos
+
+        // Exibição do resultado
+        System.out.println("Conversão em minutos: " + conversao);
+    }
+}
