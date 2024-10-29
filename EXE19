@@ -1,0 +1,26 @@
+package br.edu.principal;
+
+import java.util.Scanner;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        double a_degrau, a_usuario, qtd_degraus;
+
+        // Criação do objeto Scanner para leitura de dados
+        Scanner sc = new Scanner(System.in);
+
+        // Leitura dos valores de entrada
+        System.out.print("Digite a altura de cada degrau (em metros): ");
+        a_degrau = sc.nextDouble();
+        System.out.print("Digite a altura que o usuário deseja alcançar (em metros): ");
+        a_usuario = sc.nextDouble();
+
+        // Cálculo da quantidade de degraus necessários
+        qtd_degraus = a_usuario / a_degrau;
+
+        // Exibição da quantidade de degraus
+        System.out.println("A quantidade de degraus necessários é: " + qtd_degraus);
+    }
+}
