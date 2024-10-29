@@ -1,0 +1,29 @@
+package br.edu.principal;
+
+import java.util.Scanner;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        double num, f;
+        int i, a;
+
+        // Criação do objeto Scanner para leitura de dados
+        Scanner sc = new Scanner(System.in);
+
+        // Leitura do valor
+        System.out.print("Digite um número: ");
+        num = sc.nextDouble();
+
+        // Cálculos
+        i = (int) num; // parte inteira de num
+        f = num - i; // parte decimal de num
+        a = (int) Math.round(num); // arredondar num
+
+        // Exibição dos resultados
+        System.out.println("Parte inteira: " + i);
+        System.out.println("Parte decimal: " + f);
+        System.out.println("Número arredondado: " + a);
+    }
+}
