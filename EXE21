@@ -1,0 +1,27 @@
+package br.edu.principal;
+
+import java.util.Scanner;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        double X, Y, Z;
+
+        // Criação do objeto Scanner para leitura de dados
+        Scanner sc = new Scanner(System.in);
+
+        // Leitura dos valores de entrada
+        System.out.print("Digite o valor de Z: ");
+        Z = sc.nextDouble();
+        System.out.print("Digite o valor de X: ");
+        X = sc.nextDouble();
+
+        // Cálculo de Y conforme o algoritmo
+        Y = Math.pow(Z, 2) - Math.pow(X, 2); // Y = Z² - X²
+        Y = Math.pow(Y, 2); // Y = Y²
+
+        // Exibição do resultado
+        System.out.println("O valor de Y é: " + Y);
+    }
+}
