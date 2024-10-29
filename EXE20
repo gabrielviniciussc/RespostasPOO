@@ -1,0 +1,29 @@
+package br.edu.principal;
+
+import java.util.Scanner;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        double ang, alt, escada, radiano;
+
+        // Criação do objeto Scanner para leitura de dados
+        Scanner sc = new Scanner(System.in);
+
+        // Leitura dos valores de entrada
+        System.out.print("Digite o ângulo (em graus): ");
+        ang = sc.nextDouble();
+        System.out.print("Digite a altura da escada (em metros): ");
+        alt = sc.nextDouble();
+
+        // Conversão do ângulo de graus para radianos
+        radiano = ang * Math.PI / 180;
+
+        // Cálculo do comprimento da escada
+        escada = alt / Math.sin(radiano);
+
+        // Exibição do resultado
+        System.out.println("O comprimento da escada necessário é: " + escada);
+    }
+}
