@@ -1,0 +1,32 @@
+package br.edu.principal;
+
+import java.util.Scanner;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        double peso_saco, racao_gato1, racao_gato2, total_final;
+
+        // Criação do objeto Scanner para leitura de dados
+        Scanner sc = new Scanner(System.in);
+
+        // Leitura dos valores de entrada
+        System.out.print("Digite o peso do saco de ração (em kg): ");
+        peso_saco = sc.nextDouble();
+        System.out.print("Digite a quantidade de ração diária para o gato 1 (em gramas): ");
+        racao_gato1 = sc.nextDouble();
+        System.out.print("Digite a quantidade de ração diária para o gato 2 (em gramas): ");
+        racao_gato2 = sc.nextDouble();
+
+        // Conversão das rações de gramas para quilogramas
+        racao_gato1 = racao_gato1 / 1000;
+        racao_gato2 = racao_gato2 / 1000;
+
+        // Cálculo do total final de ração restante
+        total_final = peso_saco - 5 * (racao_gato1 + racao_gato2);
+
+        // Exibição do total final de ração restante
+        System.out.println("A quantidade de ração restante após 5 dias é: " + total_final + " kg");
+    }
+}
