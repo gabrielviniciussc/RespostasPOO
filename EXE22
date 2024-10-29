@@ -1,0 +1,33 @@
+package br.edu.principal;
+
+import java.util.Scanner;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        double vlr_sal, qtd_kw, vlr_kw, vlr_reais, desc, vlr_desc;
+
+        // Criação do objeto Scanner para leitura de dados
+        Scanner sc = new Scanner(System.in);
+
+        // Leitura dos valores de entrada
+        System.out.print("Digite o valor do salário: ");
+        vlr_sal = sc.nextDouble();
+        System.out.print("Digite a quantidade de kWh: ");
+        qtd_kw = sc.nextDouble();
+
+        // Cálculo do valor por kWh e valor total em reais
+        vlr_kw = vlr_sal / 5; // vlr_kw ← vlr_sal / 5
+        vlr_reais = vlr_kw * qtd_kw; // vlr_reais ← vlr_kw * qtd_kw
+
+        // Cálculo do desconto e valor final
+        desc = vlr_reais * 15 / 100; // desc ← vlr_reais * 15 / 100
+        vlr_desc = vlr_reais - desc; // vlr_desc ← vlr_reais − desc
+
+        // Exibição dos resultados
+        System.out.println("Valor do kWh: " + vlr_kw);
+        System.out.println("Valor total em reais: " + vlr_reais);
+        System.out.println("Valor após desconto: " + vlr_desc);
+    }
+}
