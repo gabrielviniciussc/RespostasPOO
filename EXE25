@@ -1,0 +1,29 @@
+package br.edu.principal;
+
+import java.util.Scanner;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        // DECLARE custo, convite, qtd NUMÉRICO
+        double custo, convite, qtd;
+
+        // Criação do objeto Scanner para leitura de dados
+        Scanner sc = new Scanner(System.in);
+
+        // LEIA custo
+        System.out.print("Digite o custo total: ");
+        custo = sc.nextDouble();
+
+        // LEIA convite
+        System.out.print("Digite o valor do convite: ");
+        convite = sc.nextDouble();
+
+        // qtd ← custo / convite
+        qtd = custo / convite;
+
+        // ESCREVA qtd
+        System.out.println("Quantidade de convites que podem ser vendidos: " + qtd);
+    }
+}
+
