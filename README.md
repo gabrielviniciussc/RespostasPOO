@@ -6,17 +6,17 @@ As **25 questões** do **Capítulo 3** foram totalmente resolvidas em **Java**, 
 
 ---
 
-## Equipe Responsável
+## 🛠 Equipe Responsável
 
 - **Gabriel Vinicius da Silva Correia**  
-  GitHub: [https://github.com/gabrielviniciussc](https://github.com/gabrielviniciussc)
+  GitHub: [gabrielviniciussc](https://github.com/gabrielviniciussc)
 
 - **Thaylize Sherliane Silva Santos**  
-  GitHub: [https://github.com/thaylizesant0s](https://github.com/thaylizesant0s)
+  GitHub: [thaylizesant0s](https://github.com/thaylizesant0s)
 
 ---
 
-## Conteúdo
+## 📚 Conteúdo
 
 Este repositório contém as **25 questões resolvidas** do **Capítulo 3**, todas implementadas em **Java**. As soluções abordam conceitos iniciais e fundamentais da programação, como:
 
